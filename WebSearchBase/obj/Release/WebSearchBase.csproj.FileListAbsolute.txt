@@ -1,0 +1,7 @@
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Release\WebSearchBase.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Release\WebSearchBase.pdb
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Release\HtmlAgilityPack.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Release\HtmlAgilityPack.pdb
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Release\HtmlAgilityPack.xml
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\obj\Release\WebSearchBase.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\obj\Release\WebSearchBase.pdb

@@ -1,0 +1,10 @@
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\obj\Debug\JSON.csprojResolveAssemblyReference.cache
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\JSON.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\JSON.pdb
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\WebSearchBase.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\HtmlAgilityPack.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\WebSearchBase.pdb
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\bin\Debug\HtmlAgilityPack.xml
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\obj\Debug\JSON.dll
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\JSON\obj\Debug\JSON.pdb
