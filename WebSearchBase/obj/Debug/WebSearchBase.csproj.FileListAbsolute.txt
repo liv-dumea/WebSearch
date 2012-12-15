@@ -1,7 +1,6 @@
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Debug\WebSearchBase.dll
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Debug\WebSearchBase.pdb
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Debug\HtmlAgilityPack.dll
-C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Debug\HtmlAgilityPack.pdb
-C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\bin\Debug\HtmlAgilityPack.xml
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\obj\Debug\WebSearchBase.dll
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\obj\Debug\WebSearchBase.pdb
+C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\WebSearchBase\obj\Debug\WebSearchBase.csprojResolveAssemblyReference.cache

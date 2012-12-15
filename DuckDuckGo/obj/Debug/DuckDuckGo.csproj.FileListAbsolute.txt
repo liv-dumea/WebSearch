@@ -3,8 +3,6 @@ C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\De
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\Debug\DuckDuckGo.pdb
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\Debug\HtmlAgilityPack.dll
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\Debug\WebSearchBase.dll
-C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\Debug\HtmlAgilityPack.pdb
-C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\Debug\HtmlAgilityPack.xml
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\bin\Debug\WebSearchBase.pdb
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\obj\Debug\DuckDuckGo.dll
 C:\Users\livil\Documents\Visual Studio 2012\Projects\WebSearch\DuckDuckGo\obj\Debug\DuckDuckGo.pdb
