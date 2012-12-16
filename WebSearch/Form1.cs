@@ -26,19 +26,11 @@ namespace WebSearch
 
             providers = new List<ISearchProvider>();
             formats = new List<IExportFormat>();
-
-
             loadDefaultProvides();
             loadDefaultFormats();
             if (System.IO.Directory.Exists("plugins"))
                 loadPlugins();
-            // this.checkBox1.AutoSize = true;
-            // this.checkBox1.Location = new 
-            // this.checkBox1.Name = "checkBox1";
-            // this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            // this.checkBox1.TabIndex = 0;
-            // this.checkBox1.Text = "checkBox1";
-            // this.checkBox1.UseVisualStyleBackColor = true;
+
             if (!System.IO.Directory.Exists("searches"))
             {
                 System.IO.Directory.CreateDirectory("searches");
@@ -47,7 +39,6 @@ namespace WebSearch
         }
         void initializeCheckBoxesProviders()
         {
-
             int nr = providers.Count();
             this.nrProviders = nr;
             provCheckBox = new CheckBox[nr];
@@ -66,7 +57,6 @@ namespace WebSearch
 
         void initializeCheckBoxesFormats()
         {
-
             int nr = formats.Count();
             this.nrFormats = nr;
             formatsCheckBox = new CheckBox[nr];
@@ -103,7 +93,6 @@ namespace WebSearch
         {
             formats.Add(new Screen());
             formats.Add(new CSV('\t'));
-          //  formats.Add(new JSON());
             formats.Add(new XML());
             formats.Add(new HTML());
         }
@@ -113,11 +102,9 @@ namespace WebSearch
             providers.Add(new Google());
             providers.Add(new Bing());
             providers.Add(new Yahoo());
-           // providers.Add(new DuckDuckGo());
         }
         void loadPlugins()
         {
-            //List<Base> objects = new List<Base>();
             try
             {
                 DirectoryInfo dir = new DirectoryInfo("plugins");
@@ -127,32 +114,14 @@ namespace WebSearch
                     Assembly assembly = Assembly.LoadFrom(file.FullName);
                     foreach (Type type in assembly.GetTypes())
                     {
-                        /* if (type.IsSubclassOf(typeof(Base)) && type.IsAbstract == false)
-                         {
-                             Base b = type.InvokeMember(null,
-                                                        BindingFlags.CreateInstance,
-                                                        null, null, null) as Base;
-                             objects.Add(b);
-                         }
-                        */
-                      //  if (type.IsSubclassOf(typeof(ISearchProvider)) && type.IsAbstract == false)
-                        //{
                             ISearchProvider p = type.InvokeMember(null,
                                 BindingFlags.CreateInstance, null, null, null) as ISearchProvider;
                         if(p!=null)  
                             providers.Add(p);
-                        //}
-
-                      
-                   //     if (type.IsSubclassOf(typeof(IExportFormat)) && type.IsAbstract == false)
-                       
-                        
                             IExportFormat f = type.InvokeMember(null,
                                 BindingFlags.CreateInstance, null, null, null) as IExportFormat;
                         if(f!=null)
                             formats.Add(f);
-                        
-
                     }
                 }
             }
@@ -168,7 +137,6 @@ namespace WebSearch
             int nr;
             if (s=="" || !int.TryParse(this.resultNumber.Text, out nr))
             {
-                
                 toolStripStatusLabel1.Text = "Wrong parameters";
                 return;
             }

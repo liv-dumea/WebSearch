@@ -54,8 +54,11 @@ namespace WebSearch
         }
         public void Write(string fileName, SearchResult res)
         {
-               System.Windows.Forms.MessageBox.Show(Convert(res));
+             //  System.Windows.Forms.MessageBox.Show(Convert(res));
         //        System.Windows.Forms.MessageBox.Show("Eroare la scriere in fisierul: "+fileName + ".csv");
+            ScreenResults win = new ScreenResults(Convert(res),fileName);
+            win.ShowDialog();
+            
         }
 
         public string Convert(SearchResult res)
