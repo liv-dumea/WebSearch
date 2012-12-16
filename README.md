@@ -7,6 +7,8 @@ WebSearch
 
 > [htmlAgilityPack](http://htmlagilitypack.codeplex.com) --needs repair before use (just add the dll reference again)
 
+[Download Binaries](http://ubuntuone.com/5ZomS8C8O4TBfKEPYNb8wG)
+
 Notes:     
 
 1. custom number of results won't work for bing
