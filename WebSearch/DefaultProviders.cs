@@ -24,9 +24,10 @@ namespace WebSearch
             return @"http://www.google.com/search?q=" + WebUtility.UrlEncode(searchedWord) + "&num=" + nr.ToString();
         }
 
-        public SearchResult ParseDocument(HtmlAgilityPack.HtmlDocument document)
+        public SearchResult ParseDocument(string searchedWord,int nr)
         {
-
+            var web = new HtmlWeb();
+            var document = web.Load(GetRequestUrl(searchedWord, nr));
             //HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             //doc.
             SearchResult rez = new SearchResult();
@@ -70,6 +71,7 @@ namespace WebSearch
                 }
                 rez.Add(item);
             }
+            var x = rez[0].GetKeys();
             return rez;
         }
     }
@@ -86,8 +88,10 @@ namespace WebSearch
             return @"http://www.bing.com/search?q=" + WebUtility.UrlEncode(searchedWord) + "&num=" + nr.ToString();
         }
 
-        public SearchResult ParseDocument(HtmlAgilityPack.HtmlDocument document)
+        public SearchResult ParseDocument(string searchedWord, int nr)
         {
+            var web = new HtmlWeb();
+            var document = web.Load(GetRequestUrl(searchedWord, nr));
 
             //HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             //doc.
@@ -153,8 +157,10 @@ namespace WebSearch
             return @"http://search.yahoo.com/search?n="+ nr.ToString( )  + "&p="+ WebUtility.UrlEncode(searchedWord)+"&vs=";
         }
 
-        public SearchResult ParseDocument(HtmlAgilityPack.HtmlDocument document)
+        public SearchResult ParseDocument(string searchedWord, int nr)
         {
+            var web = new HtmlWeb();
+            var document = web.Load(GetRequestUrl(searchedWord, nr));
 
             //HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             //doc.

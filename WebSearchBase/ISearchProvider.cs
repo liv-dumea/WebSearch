@@ -10,6 +10,6 @@ namespace WebSearchBase
     {
          string Name { get; }
          string GetRequestUrl(string searchedWord, int nr);
-         SearchResult ParseDocument(HtmlDocument doc);
+         SearchResult ParseDocument(string searchedWord, int nr);
     }
 }

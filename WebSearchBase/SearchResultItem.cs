@@ -23,6 +23,18 @@ namespace WebSearchBase
                     return "";
             }
         }
+        public string[] GetKeys()
+        {
+            int i=0;
+            string[] rez= new string[items.Count()];
+
+            foreach (var k in items.Keys)
+            {
+                k.ToString();
+                rez[i++] = k;
+            }
+            return rez;
+        }
         public void Add(string key, string value)
         {
             if (key.Trim() != "")

@@ -19,11 +19,17 @@ namespace DuckDuckGo
 
         public string GetRequestUrl(string searchedWord, int nr = 25)
         {
+            if (searchedWord.Contains('!'))
+            {
+                MessageBox.Show("Please do not use !bags again");
+            }
             return @"http://duckduckgo.com/html/?q=" + WebUtility.UrlEncode(searchedWord) + "&num=" + nr.ToString();
         }
 
-        public SearchResult ParseDocument(HtmlAgilityPack.HtmlDocument document)
+        public SearchResult ParseDocument(string searchedWord, int nr)
         {
+            var web = new HtmlWeb();
+            var document = web.Load(GetRequestUrl(searchedWord, nr));
 
             //HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             //doc.

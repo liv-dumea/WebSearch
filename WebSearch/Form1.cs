@@ -142,14 +142,14 @@ namespace WebSearch
             }
             else
                 toolStripStatusLabel1.Text = "Searching for: " + s;
-            var web = new HtmlWeb();
+            
             this.Enabled = false;
             for (int i = 0; i < nrProviders; i++)
             {
                 if (provCheckBox[i].Checked)
                 {
-                    var doc = web.Load(providers[i].GetRequestUrl(s, nr));
-                    var res = providers[i].ParseDocument(doc);
+                    
+                    var res = providers[i].ParseDocument(s,nr);
                     for (int j = 0; j < nrFormats; j++)
                     {
                         if (formatsCheckBox[j].Checked)
