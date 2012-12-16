@@ -1,11 +1,16 @@
 WebSearch
 =========
 
-surf net with different search engines
+### _surf net with different search engines_ ###
 
-.net 4.5
+## uses **[.NET 4.5] [1]** ##
 
-htmlAgilityPack --needs repair before use (just add the dll reference again)
+> [htmlAgilityPack](http://htmlagilitypack.codeplex.com) --needs repair before use (just add the dll reference again)
 
-Note: custom number of results doesn't work for bing
-      -yahoo accepts custom numbers(15,30,40)
+Notes:     
+
+1. custom number of results won't work for bing
+2. yahoo accepts some custom numbers(15,30,40)
+
+[1]:https://www.microsoft.com/net " download .NET 4.5"
+
