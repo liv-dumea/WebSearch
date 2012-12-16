@@ -45,6 +45,8 @@
             // 
             // providersBox
             // 
+            this.providersBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.providersBox.Location = new System.Drawing.Point(15, 80);
             this.providersBox.Name = "providersBox";
             this.providersBox.Size = new System.Drawing.Size(221, 159);
@@ -54,6 +56,8 @@
             // 
             // exportBox
             // 
+            this.exportBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.exportBox.Location = new System.Drawing.Point(242, 80);
             this.exportBox.Name = "exportBox";
             this.exportBox.Size = new System.Drawing.Size(212, 159);
@@ -63,6 +67,7 @@
             // 
             // searchButton
             // 
+            this.searchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.searchButton.Location = new System.Drawing.Point(12, 245);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(119, 23);
@@ -73,6 +78,8 @@
             // 
             // searchWord
             // 
+            this.searchWord.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.searchWord.Location = new System.Drawing.Point(82, 26);
             this.searchWord.Name = "searchWord";
             this.searchWord.Size = new System.Drawing.Size(318, 20);
@@ -122,6 +129,7 @@
             // 
             // closeButton
             // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.Location = new System.Drawing.Point(379, 245);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
@@ -132,6 +140,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(267, 245);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 23);

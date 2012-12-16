@@ -21,6 +21,30 @@ namespace WebSearch
         private System.Windows.Forms.CheckBox[] formatsCheckBox;
         private int nrProviders;
         private int nrFormats;
+        public Form1()
+        {
+
+            providers = new List<ISearchProvider>();
+            formats = new List<IExportFormat>();
+
+
+            loadDefaultProvides();
+            loadDefaultFormats();
+            if (System.IO.Directory.Exists("plugins"))
+                loadPlugins();
+            // this.checkBox1.AutoSize = true;
+            // this.checkBox1.Location = new 
+            // this.checkBox1.Name = "checkBox1";
+            // this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            // this.checkBox1.TabIndex = 0;
+            // this.checkBox1.Text = "checkBox1";
+            // this.checkBox1.UseVisualStyleBackColor = true;
+            if (!System.IO.Directory.Exists("searches"))
+            {
+                System.IO.Directory.CreateDirectory("searches");
+            }
+            InitializeComponent();
+        }
         void initializeCheckBoxesProviders()
         {
 
@@ -68,36 +92,12 @@ namespace WebSearch
             this.providersBox.ResumeLayout(true);
             this.providersBox.PerformLayout();
 
-
             this.exportBox.SuspendLayout();
             this.initializeCheckBoxesFormats();
             this.exportBox.ResumeLayout();
             this.exportBox.PerformLayout();
         }
-        public Form1()
-        {
-
-           providers = new List<ISearchProvider>();
-           formats = new List<IExportFormat>();
-           
-                
-           loadDefaultProvides();
-           loadDefaultFormats();
-            if (System.IO.Directory.Exists("plugins"))
-                loadPlugins();
-          // this.checkBox1.AutoSize = true;
-          // this.checkBox1.Location = new 
-          // this.checkBox1.Name = "checkBox1";
-          // this.checkBox1.Size = new System.Drawing.Size(80, 17);
-          // this.checkBox1.TabIndex = 0;
-          // this.checkBox1.Text = "checkBox1";
-          // this.checkBox1.UseVisualStyleBackColor = true;
-           if (!System.IO.Directory.Exists("searches"))
-           {
-               System.IO.Directory.CreateDirectory("searches");
-           }
-            InitializeComponent();
-        }
+      
 
         private void loadDefaultFormats()
         {
